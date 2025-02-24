@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.top nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.top .logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.top .nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.top .nav-links a {
+    text-decoration: none;
+    color: #efeaea;
+}
+
+.top .download-btn {
+    background: #080707;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.top .main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.top .intro-section {
+    padding-right: 2rem;
+}
+
+.top .intro-section h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.top .wave-emoji {
+    font-size: 2.5rem;
+}
+
+.top .description {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.top .location {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.top .availability {
+    color: #22c55e;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.top .availability::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #22c55e;
+    border-radius: 50%;
+}
+
+.top .social-links {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.top .social-links a {
+    color: rgb(147, 145, 145);
+    text-decoration: none;
+}
+
+.top .image-section {
+    position: relative;
+}
+
+.top .profile-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.top .image-bg {
+    position: absolute;
+    top: 20px;
+    right: -20px;
+    width: 100%;
+    height: 100%;
+    background: #f3f4f6;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-links {
+        display: none;
+    }
+}
+
+.skills .logoskills {
+    text-align: center;
+}
+
+.skills .logoskills button {
+    border-radius: 5px;
+    color: rgb(46, 44, 44);
+    background-color: grey;
+}
+
+.skills body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.skills .logo-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skills .logo-item {
+    text-align: center;
+    width: 100px;
+}
+
+.skills .logo-item i {
+    font-size: 48px;
+    color: #333;
+}
+
+.skills .logo-item p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.body .logosWord {
+    text-align: center;
+}
+
+.body .logosWord button {
+    border-radius: 5px;
+    color: rgb(46, 44, 44);
+    background-color: grey;
+}
+
+.body .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.body .section-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.body .project-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.body .project-card:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.body.project-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.body .project-content {
+    margin-left: 20px;
+}
+
+.body.project-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.body .project-description {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.body .tech-stack {
+    margin-bottom: 10px;
+}
+
+.body .tech-badge {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 10px;
+    background-color: #f1f1f1;
+    border-radius: 15px;
+    font-size: 12px;
+}
+
+.bod .external-link {
+    display: inline-block;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+
+
+@media (max-width: 768px) {
+    .project-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .project-image img {
+        width: 100%;
+    }
+
+    .project-content {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+.fooder {
+    text-align: center;
+}
